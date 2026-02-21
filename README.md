@@ -20,7 +20,7 @@ This version uses a local LLM (Mistral via Ollama) instead of OpenAI API.
 
 1. Install Ollama
 2. Pull Mistral model:
-WEEK-2
+
 # StatBot Pro v2
 
 An intelligent CSV data analysis web application built using Streamlit.
