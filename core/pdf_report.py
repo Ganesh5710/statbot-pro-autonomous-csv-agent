@@ -52,3 +52,4 @@ def generate_pdf_report(filename, kpis, insights, outlier_summary):
     doc.build(elements)
 
     return filename
+# ReportLab PDF engine
