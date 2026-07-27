@@ -27,3 +27,4 @@ def generate_insights(df):
         insights.append("No numeric columns found for statistical insights.")
 
     return insights
+import pandas as pd
