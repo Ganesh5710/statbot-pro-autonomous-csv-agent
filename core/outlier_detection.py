@@ -7,3 +7,5 @@ def detect_outliers_for_column(df, column):
     upper = Q3 + 1.5 * IQR
 
     return df[(df[column] < lower) | (df[column] > upper)]
+import pandas as pd
+import numpy as np
