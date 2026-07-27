@@ -855,3 +855,5 @@ st.set_page_config(page_title='StatBot Pro', layout='wide')
 # Distribution plots
 
 # Categorical tab
+
+# Outliers inspection view
