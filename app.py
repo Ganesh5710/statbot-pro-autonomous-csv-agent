@@ -849,3 +849,5 @@ st.set_page_config(page_title='StatBot Pro', layout='wide')
 # Executive KPI cards
 
 # Data preview view
+
+# Correlation tab
