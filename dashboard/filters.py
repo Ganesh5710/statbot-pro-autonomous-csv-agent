@@ -35,3 +35,5 @@ def apply_filters(df):
 # Optimized filter caching
 
 # Caching filter state
+
+# Dashboard interactive slicers
