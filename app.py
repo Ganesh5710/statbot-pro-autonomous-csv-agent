@@ -847,3 +847,5 @@ st.set_page_config(page_title='StatBot Pro', layout='wide')
 # File upload handler
 
 # Executive KPI cards
+
+# Data preview view
