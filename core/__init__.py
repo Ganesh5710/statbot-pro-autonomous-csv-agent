@@ -1,1 +1,2 @@
 `n__version__ = "1.0.0"`n`n__version__ = "1.0.0"`n
+"""Core package for StatBot Pro."""
