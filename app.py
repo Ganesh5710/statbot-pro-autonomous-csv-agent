@@ -841,3 +841,5 @@ if uploaded_file is not None:
 # Responsive chart layout padding updated
 
 import streamlit as st
+
+st.set_page_config(page_title='StatBot Pro', layout='wide')
