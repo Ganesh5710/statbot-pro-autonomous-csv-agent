@@ -9,3 +9,10 @@ df.isnull().sum()
 import pandas as pd
 
 def load_csv(f): return pd.read_csv(f)
+
+df.describe()
+df.info()
+df.isnull().sum()
+
+# Input verification and error checks
+
