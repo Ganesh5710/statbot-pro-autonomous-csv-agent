@@ -10,3 +10,4 @@ def get_correlation_matrix(df, selected_cols=None, method="pearson"):
         return None
 
     return numeric_df.corr(method=method)
+import pandas as pd
