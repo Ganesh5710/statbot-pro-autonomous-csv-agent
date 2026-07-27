@@ -20,3 +20,4 @@ def calculate_kpis(df):
         kpis["Highest Avg Column"] = "N/A"
 
     return kpis
+import pandas as pd
