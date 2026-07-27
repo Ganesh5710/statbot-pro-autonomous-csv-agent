@@ -851,3 +851,5 @@ st.set_page_config(page_title='StatBot Pro', layout='wide')
 # Data preview view
 
 # Correlation tab
+
+# Distribution plots
