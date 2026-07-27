@@ -843,3 +843,5 @@ if uploaded_file is not None:
 import streamlit as st
 
 st.set_page_config(page_title='StatBot Pro', layout='wide')
+
+# File upload handler
