@@ -7,3 +7,5 @@ df.isnull().sum()
 # Memory chunk optimization added
 
 import pandas as pd
+
+def load_csv(f): return pd.read_csv(f)
