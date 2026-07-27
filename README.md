@@ -190,3 +190,6 @@ StatBot Pro is successfully:
 ✔ Version Controlled
 ✔ Deployed
 ✔ Live & Public
+
+# StatBot Pro - Autonomous CSV Agent
+
