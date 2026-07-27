@@ -9,3 +9,5 @@ def detect_outliers_for_column(df, column):
     return df[(df[column] < lower) | (df[column] > upper)]
 import pandas as pd
 import numpy as np
+
+def iqr_outliers(df, col): pass
