@@ -1,183 +1,78 @@
-🚀 StatBot Pro – Autonomous CSV Analysis Agent
+# 🚀 StatBot Pro – Autonomous CSV Analysis Agent
 
-StatBot Pro is an intelligent web-based CSV data analysis application built using Streamlit.
-It performs automated statistical analysis, correlation detection, KPI calculation, outlier detection, and generates analytical insights.
+**StatBot Pro** is an intelligent web-based CSV data analysis application built using Streamlit. It performs automated statistical analysis, correlation detection, KPI calculation, outlier detection, and generates downloadable analytical reports.
 
-🌐 Live Demo
+🌐 **Live Demo:** [statbot-pro.streamlit.app]                                                                                                                                           (https://statbot-pro.streamlit.app/)
 
+---
 
-https://statbot-pro.streamlit.app/
+## 📌 Project Overview
 
+StatBot Pro acts as an autonomous data analysis agent designed to streamline data exploration.
 
+* **CSV Upload & Data Preview:** Upload any dataset and instantly preview tabular data.
+* **Automated Statistical Summaries:** Get quick descriptive statistics ($mean, median, std, quartiles$).
+* **Correlation Analysis:** Automatically identify and visualize relationships between variables.
+* **KPI & Outlier Engine:** Detect key metrics and flag statistical anomalies.
+* **Insight Generation Engine:** Translate raw data patterns into plain-English insights.
+* **PDF Report Export:** Download formatted, executive-ready analytical reports.
 
+---
 
-📌 Project Overview
+## 👥 Team Work Distribution
 
-StatBot Pro is designed to act as an autonomous data analysis agent that can:
+StatBot Pro was designed, built, and deployed collaboratively by a team of 3 developers:
 
-Upload CSV datasets
+Janardhan P — *Core Engine & Data Analytics Lead*
+* **Core Analytics Modules (`core/analyzer.py`, `core/correlation_analysis.py`):** Developed descriptive statistics summary pipelines and heatmap correlation generation.
+* **KPI & Outlier Engine (`core/kpi_calculator.py`, `core/outlier_detection.py`):** Implemented statistical outlier detection algorithms ($IQR / Z\text{-score}$) and quantitative KPI calculation logic.
+* **Insight Engine (`core/insight_engine.py`):** Built automated natural language summaries based on processed statistical outputs.
 
-Perform statistical summaries
+Ganesh B — *Frontend & Dashboard Engineer*
+* **Streamlit UI Layout (`app.py`):** Structured the primary user interface, app theme, navigation flow, and session state memory handling.
+* **Filtering Engine (`dashboard/filters.py`):** Designed branch-wise and brand-wise interactive dataset filtering components.
+* **Visual Interfaces:** Configured visual chart layouts, dynamic table previews, and interactive dataset views.
 
-Detect correlations
+Chinni krishna K  — *PDF Engine & Deployment Specialist*
+* **PDF Generation (`core/pdf_report.py`):** Built the automated PDF export engine using **ReportLab**, formatting statistics, visual charts, and generated insights into downloadable reports.
+* **Architecture & Dependencies:** Organized modular directory structures (`core/`, `dashboard/`) and optimized `requirements.txt` configurations.
+* **Git, GitHub & Deployment:** Managed version control workflows, set up the GitHub repo, and handled live production deployment via **Streamlit Community Cloud**.
 
-Identify outliers
+---
 
-Calculate KPIs
+## 🗓 Development Journey (4-Week Timeline)
+| **Week 1** | Built statistical summary functions & raw data parser. | Designed initial UI layout and file uploader setup. | Organized directory structure, setup Git repo & `requirements.txt`. |
+| **Week 2** | Built correlation matrix & KPI extraction engine. | Designed dynamic filters (`dashboard/filters.py`) and data preview components. | Built initial PDF layout structure & modularized core functions. |
+| **Week 3** | Developed outlier detection algorithms ($IQR$ method). | Integrated branch/brand filters with the main Streamlit dashboard. | Integrated analytics outputs into dynamic ReportLab PDF exports. |
+| **Week 4** | Tested analytics engine across complex datasets. | Polished UI/UX, metrics styling, and responsive layout elements. | Deployed app to Streamlit Cloud, resolved dependencies, and published live app. |
 
-Generate automated insights
+---
 
-Export PDF reports
+## 🏗 Modular Architecture
 
-🗓 Development Journey (4 Weeks)
-✅ Week 1 – Foundation & Core Setup
-
-Project structure design
-
-CSV upload functionality
-
-Data preview interface
-
-Basic statistical summary
-
-Initial Streamlit UI setup
-
-Git initialization & version control
-
-Outcome: Functional CSV analysis base system.
-
-✅ Week 2 – Intelligent Analysis Engine
-
-Correlation matrix implementation
-
-Outlier detection module
-
-KPI calculator module
-
-Insight generation engine
-
-Modular folder structure (core/, dashboard/)
-
-Session memory handling
-
-Outcome: Advanced analytical capabilities added.
-
-✅ Week 3 – Advanced Features & Optimization
-
-Branch-wise filtering
-
-Brand-wise data selection
-
-Platform-specific template handling
-
-PDF report generation
-
-Performance improvements
-
-Clean UI enhancements
-
-Outcome: Production-ready intelligent analytics tool.
-
-✅ Week 4 – Deployment & Production
-
-Requirements file configuration
-
-GitHub repository management
-
-Bug fixing & dependency correction
-
-Streamlit Cloud deployment
-
-Live public hosting
-
-Documentation & README creation
-
-Outcome: Fully deployed, live web application.
-
-🏗 Architecture
-
-StatBot Pro follows a modular architecture:
-
+```text
 statbot-pro/
 │
-├── app.py
+├── app.py                      # Main Streamlit UI Entrypoint
 ├── core/
-│   ├── analyzer.py
-│   ├── correlation_analysis.py
-│   ├── kpi_calculator.py
-│   ├── insight_engine.py
-│   ├── outlier_detection.py
-│   └── pdf_report.py
+│   ├── analyzer.py             # Core Data Parsing & Summary
+│   ├── correlation_analysis.py # Heatmap & Correlation Processing
+│   ├── kpi_calculator.py       # Metrics & KPI Calculations
+│   ├── insight_engine.py       # Automated Natural Language Insights
+│   ├── outlier_detection.py    # IQR & Z-score Anomaly Detection
+│   └── pdf_report.py           # ReportLab PDF Generation Script
 │
 ├── dashboard/
-│   └── filters.py
+│   └── filters.py              # Brand & Branch Filtering Controls
 │
-└── requirements.txt
-
-This separation ensures:
-
-Clean code structure
-
-Maintainability
-
-Scalability
-
-Production-readiness
-
-🛠 Tech Stack
-
-Python
-
-Streamlit
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Seaborn
-
-Scikit-learn
-
-ReportLab
-
-Git & GitHub
-
-Streamlit Community Cloud
-
-🚀 Key Features
-
-✔ CSV Upload & Preview
-✔ Automated Statistical Summary
-✔ Correlation Matrix Analysis
-✔ KPI Calculation
-✔ Outlier Detection
-✔ Insight Generation Engine
-✔ PDF Report Generation
-✔ Modular Architecture
-✔ Live Web Deployment
-
-📦 Installation (Local Setup)
-git clone https://github.com/Ganesh5710/statbot-pro-autonomous-csv-agent.git
-cd statbot-pro-autonomous-csv-agent
-pip install -r requirements.txt
-streamlit run app.py
-🎯 Future Enhancements
-
-AI Chat-based Data Querying
-
-Authentication & User Accounts
-
-Cloud Database Integration
-
-SaaS Deployment Model
-
-Advanced ML Model Integration
+├── requirements.txt            # Python Package Dependencies
+└── README.md                   # Project Documentation
 
 👨‍💻 Developer
 
-Ganesh B
+Ganesh B(Frontend & Dashboard Engineer)
+Janardhan P(Core Engine & Data Analytics Lead)
+Chinni Krishna K(PDF Engine & Deployment Specialist)
 Autonomous Data Analysis System Developer
 GitHub: https://github.com/Ganesh5710
 
